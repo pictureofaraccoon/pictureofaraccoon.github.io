@@ -1,0 +1,76 @@
+:root {
+    cursor: url('cursor.cur'),auto;
+}
+
+h1{
+    color:white; 
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    color:white;
+    font-size: 20;
+    font-family: 'Times New Roman', Times, serif;
+}
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 33.33%;
+    padding: 0px;
+}
+
+@keyframes hor-movement {
+    0% {
+        margin-left: 0%;
+    }
+    50% {
+        margin-left: 80%;
+    }
+    100% {
+        margin-left: 0%;
+    }
+}
+  
+@keyframes ver-movement {
+    0% {
+        margin-top: 0%;
+    }
+    50% {
+        margin-top: 30%;
+    }
+    100% {
+        margin-top: 60%;
+    }
+}
+  
+.raccoon {
+    width:20%;
+    position: absolute;
+    animation-name: hor-movement, ver-movement;
+    animation-duration: 5s,5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+.raccoon2 {
+    width:20%;
+    position: absolute;
+    animation-name: hor-movement, ver-movement;
+    animation-duration: 4s,4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+.raccoon3 {
+    width:20%;
+    position: absolute;
+    animation-name: hor-movement, ver-movement;
+    animation-duration: 6s,6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
