@@ -18,11 +18,11 @@ p{
 
 .gallery{
     display: block;
-    width:100%;
-    height:200px
+    width: 100%;
+    height: 150px;
 }
 
-button{
+button {
     font-family: 'Times New Roman', Times, serif;
     background-color: red;
     color: white;
@@ -67,7 +67,7 @@ button{
 }
   
 .raccoon {
-    width:20%;
+    width: 10%;
     position: absolute;
     animation-name: hor-movement, ver-movement;
     animation-duration: 5s,5s;
@@ -76,7 +76,7 @@ button{
     animation-timing-function: linear;
 }
 .raccoon2 {
-    width:20%;
+    width: 10%;
     position: absolute;
     animation-name: hor-movement, ver-movement;
     animation-duration: 4s,4s;
@@ -85,11 +85,29 @@ button{
     animation-timing-function: linear;
 }
 .raccoon3 {
-    width:20%;
+    width: 10%;
     position: absolute;
     animation-name: hor-movement, ver-movement;
     animation-duration: 6s,6s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
+}
+
+.rainbow_text_animated {
+    background: linear-gradient(to right, #ff0000, #ff8800 , #00ff00, #0000ff, #ff00ff, #8800ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 1s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
 }
